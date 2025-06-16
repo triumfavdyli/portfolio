@@ -242,7 +242,7 @@ const Contact: React.FC = () => {
                   className={`w-full px-4 py-3 rounded-lg border ${
                     errors.message ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'
                   } bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500`}
-                  placeholder="Your message (please let your number or your social media too)"
+                  placeholder="Your message (please let your number or your social media)"
                 ></textarea>
                 {errors.message && <p className="mt-1 text-red-500 text-sm">{errors.message}</p>}
               </div>
