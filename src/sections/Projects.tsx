@@ -5,6 +5,7 @@ import SectionTitle from '../components/SectionTitle';
 import { Github, ExternalLink, X } from 'lucide-react';
 import restaurant from '../images/restaurant.png'
 import realTimeChat from '../images/real-time-chat.png';
+import handyMan from '../images/handyman.png';
 
 interface Project {
   id: number;
@@ -36,7 +37,6 @@ const Projects: React.FC = () => {
       image: restaurant,
       tags: ['react', 'node', 'typescript', 'fullstack'],
       github: 'https://github.com/triumfavdyli/Restaurant',
-
       details:
         'The Restaurant Platform is a comprehensive solution for managing restaurant operations. It features a user-friendly interface built with React and TypeScript, allowing restaurant owners to manage their menus, orders, and customer interactions efficiently. The backend is powered by Node.js, providing robust user authentication, order processing, and real-time updates. The platform supports online ordering, table reservations, and customer reviews, making it a complete solution for modern dining experiences.',
     },
@@ -54,15 +54,14 @@ const Projects: React.FC = () => {
 
     {
       id: 4,
-      title: 'Weather Dashboard',
+      title: 'Handyman Service',
       description:
-        'A weather dashboard that fetches and displays weather data from a third-party API with interactive visualizations.',
-      image:
-        'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-      tags: ['react',],
+        'A  handyman service platform connecting customers with local service providers for various home repair and maintenance tasks.',
+      image: handyMan,
+      tags: ['react'],
       github: 'https://github.com',
       details:
-        "The Weather Dashboard is a sleek application that provides users with current weather conditions and forecasts for locations worldwide. Built with React and TypeScript, it integrates with the OpenWeather API to fetch accurate weather data. The dashboard features interactive visualizations for temperature, humidity, wind speed, and other metrics, along with a search function for looking up locations. It's fully responsive and includes dark mode support.",
+        "The Handyman Service platform is designed to connect customers with local service providers for various home repair and maintenance tasks. Built with React and Node.js, it features user authentication, service listings, and a booking system. Customers can browse available services, read reviews, and book appointments directly through the platform. The application aims to simplify the process of finding and hiring reliable handyman services.",
     },
   ];
 
