@@ -5,7 +5,7 @@ import SectionTitle from '../components/SectionTitle';
 import { Github, ExternalLink, X } from 'lucide-react';
 import restaurant from '../images/restaurant.png'
 import realTimeChat from '../images/real-time-chat.png';
-import handyMan from '../images/handyman.png';
+import soundWave from '../images/soundwave.png';
 
 interface Project {
   id: number;
@@ -54,14 +54,14 @@ const Projects: React.FC = () => {
 
     {
       id: 4,
-      title: 'Handyman Service',
+      title: 'Music web player',
       description:
-        'A  handyman service platform connecting customers with local service providers for various home repair and maintenance tasks.',
-      image: handyMan,
-      tags: ['react'],
-      github: 'https://github.com',
+        'A web-based music player application with playlist management and audio visualization features.',
+      image: soundWave,
+      tags: ['react', 'node', 'SQL', 'fullstack'],
+      github: 'https://github.com/triumfavdyli/music-app-frontend',
       details:
-        "The Handyman Service platform is designed to connect customers with local service providers for various home repair and maintenance tasks. Built with React and Node.js, it features user authentication, service listings, and a booking system. Customers can browse available services, read reviews, and book appointments directly through the platform. The application aims to simplify the process of finding and hiring reliable handyman services.",
+        'The Music Web Player is a simple yet engaging application that lets users enjoy their favorite tracks directly in the browser. It includes playlist management, audio controls, and smooth transitions for a better listening experience. Users can browse through songs, create a continuous play session, and view a clean audio visualization while the music plays. With a lightweight design, the player ensures quick loading and responsiveness across devices. <a href="https://soundwavex.netlify.app/" target="_blank" rel="noopener noreferrer">Click me</a>',
     },
   ];
 
@@ -226,7 +226,8 @@ const Projects: React.FC = () => {
                 
                 <div className="mb-6">
                   <h4 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">Description</h4>
-                  <p className="text-gray-700 dark:text-gray-300">{selectedProject.details}</p>
+                  <p className="text-gray-700 dark:text-gray-300" dangerouslySetInnerHTML={{ __html: selectedProject.details }}/>
+
                 </div>
                 
                 <div className="mb-6">
